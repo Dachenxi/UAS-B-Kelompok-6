@@ -5,7 +5,7 @@
 
 </div>
 
-Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semeste (UAS) mata kuliah Pemrograman Oerorientasi Objek (PBO). Proyek ini mengimplementasikan sistem manajemen untuk sebuah toko roti Hanari Bakery.
+Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UAS) mata kuliah Pemrograman Berorientasi Objek (PBO). Proyek ini mengimplementasikan sistem manajemen untuk sebuah toko roti Hanari Bakery.
 
 ---
 
@@ -27,7 +27,6 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semeste (UAS
 ### Deskripsi Proyek
 
 
-
 ### Fitur Utama
 
 
@@ -41,8 +40,12 @@ Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar ke
 
 Berikut adalam diagaram flow yang menunjukan bagaimana alur program ini berjalan. Dirancang menggunkan [Draw.io](https://app.diagrams.net)
 
-![Class Flow](media/Diagram_Flow.drawio.png)
+<img src="media/Diagram_Flow.drawio.png" alt="Diagram Flow" height="500">
 
 ### Teknologi Yang Digunakan
 * **Bahasa Pemrogramam:** Python 3
 * **Modul Tambahan:** Rich (digunakan untuk tampilan terminal / console yang lebih interaktif)
+
+### Contributor
+
+[![Contributors](https://contrib.rocks/image?repo=Dachenxi/UAS-B-Kelompok-6)](https://github.com/dachenxi/UAS-B-Kelompok-6/graphs/contributors)
