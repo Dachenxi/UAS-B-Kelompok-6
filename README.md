@@ -9,6 +9,22 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UA
 
 ---
 
+## Daftar Isi
+
+- [Sistem Informasi Manajemen Produksi "Hanari Bakery"](#sistem-informasi-manajemen-produksi-hanari-bakery)
+  - [Proyek UAS PBO - Kelompok 6](#proyek-uas-pbo---kelompok-6)
+  - [Daftar Isi](#daftar-isi)
+    - [Anggota Kelompok](#anggota-kelompok)
+    - [Deskripsi Proyek](#deskripsi-proyek)
+    - [Fitur Utama](#fitur-utama)
+    - [Diagram Class (UML)](#diagram-class-uml)
+    - [Diagram Flow](#diagram-flow)
+    - [Teknologi Yang Digunakan](#teknologi-yang-digunakan)
+    - [Cara Menjalankan Program](#cara-menjalankan-program)
+    - [Contributor](#contributor)
+
+
+---
 
 <div align="center">
 
@@ -43,8 +59,33 @@ Berikut adalam diagaram flow yang menunjukan bagaimana alur program ini berjalan
 <img src="media/Diagram_Flow.drawio.png" alt="Diagram Flow" height="500">
 
 ### Teknologi Yang Digunakan
+
 * **Bahasa Pemrogramam:** Python 3
 * **Modul Tambahan:** Rich (digunakan untuk tampilan terminal / console yang lebih interaktif)
+
+### Cara Menjalankan Program
+
+Untuk menjalankan aplikasi ini di komputer , ikuti langkah-langkah berikut:
+
+1.  **Clone repository ini:**
+    ```bash
+    git clone https://github.com/dachenxi/UAS-B-Kelompok-6.git
+    ```
+
+2.  **Masuk ke direktori proyek:**
+    ```bash
+    cd UAS-B-Kelompok-6
+    ```
+
+3. **Instal semua modul yang dibutuhkan dari file `requirements.txt`:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Jalankan file utama:**
+    ```bash
+    python main.py
+    ```
 
 ### Contributor
 
