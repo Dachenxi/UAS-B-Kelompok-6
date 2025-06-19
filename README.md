@@ -25,4 +25,4 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semeste (UAS
 
 Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar kelas dalam sistem "Hanari Bakery". Diagram ini dirancang menggunakan Diagram.io sesuai dengan ketentuan proyek.
 
-![Class Diagram](media/Diagram Class.drawio.png)
+![Class Diagram](media/Diagram_Class.drawio.png)
