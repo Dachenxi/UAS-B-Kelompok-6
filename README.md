@@ -9,25 +9,6 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UA
 
 ---
 
-## Daftar Isi
-
-- [Sistem Informasi Manajemen Produksi "Hanari Bakery"](#sistem-informasi-manajemen-produksi-hanari-bakery)
-  - [Proyek UAS PBO - Kelompok 6](#proyek-uas-pbo---kelompok-6)
-  - [Daftar Isi](#daftar-isi)
-    - [Anggota Kelompok](#anggota-kelompok)
-    - [Deskripsi Proyek](#deskripsi-proyek)
-    - [Fitur Utama](#fitur-utama)
-    - [Diagram Class (UML)](#diagram-class-uml)
-    - [Diagram Flow](#diagram-flow)
-    - [Teknologi Yang Digunakan](#teknologi-yang-digunakan)
-    - [Cara Menjalankan Program](#cara-menjalankan-program)
-    - [Contributor](#contributor)
-
-
----
-
-<div align="center">
-
 ### Anggota Kelompok
 
 | No | Nama | NIM |
@@ -35,8 +16,6 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UA
 |1.|Muhammad Dava Syahputra|K3524058|
 |2.|Ryan ivan pratama|K3524034|
 |3.|Giga hidro Madani|K3524026|
-
-</div>
 
 ---
 
@@ -56,7 +35,7 @@ Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar ke
 
 Berikut adalam diagaram flow yang menunjukan bagaimana alur program ini berjalan. Dirancang menggunkan [Draw.io](https://app.diagrams.net)
 
-<img src="media/Diagram_Flow.drawio.png" alt="Diagram Flow" height="500">
+<img src="media/Diagram_Flow.drawio.png" alt="Diagram Flow" height="750">
 
 ### Teknologi Yang Digunakan
 
