@@ -21,15 +21,19 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UA
 
 ### Deskripsi Proyek
 
+---
 
 ### Fitur Utama
 
+---
 
 ### Diagram Class (UML)
 
-Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar kelas dalam sistem "Hanari Bakery". Diagram ini dirancang menggunakan [Diagram.io](https://app.diagrams.net) sesuai dengan ketentuan proyek.
+Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar kelas dalam sistem "Hanari Bakery". Diagram ini dirancang menggunakan [Draw.io](https://app.diagrams.net) sesuai dengan ketentuan proyek.
 
 ![Class Diagram](media/Diagram_Class.drawio.png)
+
+---
 
 ### Diagram Flow
 
@@ -37,10 +41,14 @@ Berikut adalam diagaram flow yang menunjukan bagaimana alur program ini berjalan
 
 <img src="media/Diagram_Flow.drawio.png" alt="Diagram Flow" height="750">
 
+---
+
 ### Teknologi Yang Digunakan
 
 * **Bahasa Pemrogramam:** Python 3
 * **Modul Tambahan:** Rich (digunakan untuk tampilan terminal / console yang lebih interaktif)
+
+---
 
 ### Cara Menjalankan Program
 
@@ -65,6 +73,7 @@ Untuk menjalankan aplikasi ini di komputer , ikuti langkah-langkah berikut:
     ```bash
     python main.py
     ```
+---
 
 ### Contributor
 
