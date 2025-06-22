@@ -17,7 +17,7 @@ class Croissant(ProdukRoti, BisaDikembangkan):
     def pengembangan(self):
         return "Adonan croissant dikembangkan dengan teknik lipatan berlapis untuk menghasilkan tekstur yang renyah."
     
-    def get_info(self) _> dict:
+    def get_info(self) -> dict:
         info = super().get_info()
         info["Pengembangan"] = "Dapat dikembangkan dengan teknik lipatan berlapis untuk menghasilkan tekstur yang renyah."
         return info
