@@ -12,7 +12,7 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UA
 ### Anggota Kelompok
 
 | No | Nama | NIM |
-|--|--|--|
+|--:|--|--|
 |1.|Muhammad Dava Syahputra|K3524058|
 |2.|Ryan ivan pratama|K3524034|
 |3.|Giga hidro Madani|K3524026|
@@ -21,9 +21,18 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UA
 
 ### Deskripsi Proyek
 
+Sistem "Hanari Bakery" adalah aplikasi konsol berbasis Python yang dirancang untuk membantu pemilik toko roti dalam mengelola proses produksi, bahan baku, dan perhitungan estimasi profit. Aplikasi ini menerapkan konsep-konsep inti Pemrograman Berorientasi Objek seperti Abstraksi, Inheritance, dan Interface untuk mengelola berbagai jenis produk roti seperti roti manis, croissant, dan kue kering.
+
 ---
 
 ### Fitur Utama
+
+Aplikasi ini memiliki beberapa fitur utama yang dimana sesuai dengan kebutuhan tugas.
+
+* **Menambahkan Produk Baru:** Memungkinkan pengguna untuk menambahkan produk baru
+* **Menampilkan Semua Produk:** Menampilkan kepada pengguna setiap produk yang tersedia
+* **Kalkulator Estimasi Profit:** Membantu pengguna untuk mengkalkulasikan estimasi profit dari sebuah produk
+* **Simulasi Proses Produksi:** Menunjukan pengguna bagaimana sebuah produk itu diproduksi
 
 ---
 
@@ -73,6 +82,33 @@ Untuk menjalankan aplikasi ini di komputer , ikuti langkah-langkah berikut:
     ```bash
     python main.py
     ```
+---
+
+### Uji Coba dan Screenshot
+
+Berikut adalah hasil uji coba program beserta screenshot untuk setiap fitur utama, untuk dokumentasi program.
+
+#### 1. Tampilan Menu Utama
+Masih kosong
+> Tampilan awal saat program dijalankan, menunjukkan semua opsi yang tersedia.
+
+#### 2. Menambah Produk Baru
+Masih kosong
+> Contoh output saat pengguna memilih menu untuk menambahkan produk baru dan memasukkan data yang diperlukan.
+
+#### 3. Menampilkan Semua Produk
+Masih kosong
+> Output yang menampilkan semua produk yang sudah tersimpan dalam sistem.
+
+#### 4. Kalkulator Estimasi Profit
+Masih kosong
+> Hasil perhitungan estimasi profit setelah pengguna memilih jenis roti dan jumlah produksi.
+
+#### 5. Simulasi Proses Produksi
+Masih kosong
+> Contoh simulasi proses pembuatan untuk salah satu jenis roti.
+
+
 ---
 
 ### Contributor
