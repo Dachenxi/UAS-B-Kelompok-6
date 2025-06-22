@@ -219,8 +219,8 @@ class HanariBakeryApp:
         profit_per_batch = produk_terpilih.harga_jual - produk_terpilih.biaya_produksi
 
         # Profit untuk 1 pcs
-        if self.ukuran_batch > 0:
-            profit_per_pcs = profit_per_batch / self.ukuran_batch
+        if produk_terpilih.ukuran_batch > 0:
+            profit_per_pcs = profit_per_batch / produk_terpilih.ukuran_batch
         else:
             profit_per_pcs = 0
 

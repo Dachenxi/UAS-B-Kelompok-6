@@ -37,3 +37,21 @@ class ProdukRoti(ABC):
             "Harga Jual": f"Rp {self.harga_jual:,}",
             "Jenis": self.__class__.__name__,
         }
+
+    @abstractmethod
+    def pengadonan(self) -> str:
+        """Metode abstrak untuk proses pengadonan roti.
+
+        Returns:
+            str: Deskripsi proses pengadonan.
+        """
+        pass
+
+    @abstractmethod
+    def pemanggangan(self) -> str:
+        """Metode abstrak untuk proses pemanggangan roti.
+
+        Returns:
+            str: Deskripsi proses pemanggangan.
+        """
+        pass
