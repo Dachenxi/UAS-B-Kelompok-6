@@ -99,7 +99,7 @@ Berikut adalah hasil uji coba program beserta screenshot untuk setiap fitur utam
 > Contoh output saat pengguna memilih menu untuk menambahkan produk baru dan memasukkan data yang diperlukan.
 
 #### 3. Menampilkan Semua Produk
-![Menampilkan Semua Produk](media/screenshot/Tampilkan_Produk.png)
+![Menampilkan Semua Produk](media/screenshot/Tampil_Produk.png)
 > Output yang menampilkan semua produk yang sudah tersimpan dalam sistem.
 
 #### 4. Kalkulator Estimasi Profit
@@ -109,7 +109,6 @@ Berikut adalah hasil uji coba program beserta screenshot untuk setiap fitur utam
 #### 5. Simulasi Proses Produksi
 ![Simulasi Proses Produksi](media/screenshot/Simulasi_Proses.png)
 > Contoh simulasi proses pembuatan untuk salah satu jenis roti.
-
 
 ---
 

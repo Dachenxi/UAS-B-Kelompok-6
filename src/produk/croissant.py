@@ -22,8 +22,3 @@ class Croissant(ProdukRoti, BisaDikembangkan):
 
     def pemanggangan(self) -> str:
         return "Croissant dipanggang dalam oven pada suhu 200°C selama 15-20 menit hingga berwarna keemasan dan mengembang sempurna."
-
-    def get_info(self) -> dict:
-        info = super().get_info()
-        info["Pengembangan"] = "Dapat dikembangkan dengan teknik lipatan berlapis untuk menghasilkan tekstur yang renyah."
-        return info

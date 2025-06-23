@@ -26,9 +26,3 @@ class Muffin(ProdukRoti, BisaDikembangkan, BisaDiberiToping):
 
     def toping(self) -> str:
         return "beri hiasan toping bisa sebelum dimasukkan ke oven atau setelah proses oven"
-
-    def get_info(self) -> dict:
-        info = super().get_info()
-        info["Pengembangan"] = "Dapat dibentuk menggunakan cetakan berbentuk"
-        info["Toping"] = "beri toping sesuai selera"
-        return info

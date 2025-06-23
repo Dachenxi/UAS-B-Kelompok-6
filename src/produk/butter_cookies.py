@@ -21,8 +21,3 @@ class ButterCookies(ProdukRoti, BisaDiberiToping):
 
     def pemanggangan(self) -> str:
         return "Memanggang butter cookies dalam oven pada suhu 180°C selama 15-20 menit hingga berwarna keemasan dan teksturnya renyah."
-
-    def get_info(self) -> dict:
-        info = super().get_info()
-        info["Toping"] = "Coklat"
-        return info

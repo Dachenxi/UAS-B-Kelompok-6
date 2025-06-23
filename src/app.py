@@ -25,7 +25,7 @@ class HanariBakeryApp:
 
     def _menu(self):
         """Menampilkan main menu"""
-        table_menu = Table(title="Aplikasi Hanari Bakery", box=box.ROUNDED)
+        table_menu = Table(title="Aplikasi Hanari Bakery", box=box.HEAVY_HEAD)
         header = ["Nomor", "Nama Menu", "Deskripsi"]
         for head in header:
             table_menu.add_column(head, justify="left", no_wrap=True, style="bold")
@@ -66,12 +66,12 @@ class HanariBakeryApp:
     def run(self):
         """Menjalankan aplikasi Hanari Bakery."""
         self.console.print("[bold][green]Selamat datang[/green] di Hanari Bakery!. [red]Enter[/red] untuk memulai.[/bold]", end="")
-        time.sleep(1)
+        time.sleep(0.5)
         input()
         self._clean_screen()
         while True:
             self._menu()
-            choice = IntPrompt.ask("Pilih menu (1-5)",
+            choice = IntPrompt.ask("Pilih [blue bold]menu[/blue bold] (1-5)",
                                    choices=["1", "2", "3", "4", "5"],
                                    show_choices=False)
 
@@ -94,7 +94,7 @@ class HanariBakeryApp:
                 self.console.print("[bold]Pilihan [red]tidak valid[/red]. Silakan coba lagi.[/bold]")
 
     def tambah_produk(self):
-        tambah_produk_table = Table(title="Tambah Produk Roti", box=box.ROUNDED)
+        tambah_produk_table = Table(title="Tambah Produk Roti", box=box.HEAVY_HEAD)
         tambah_produk_table.add_column("Nomor", justify="left", style="bold")
         tambah_produk_table.add_column("Jenis Produk", justify="left", style="bold")
 
@@ -118,12 +118,12 @@ class HanariBakeryApp:
             self.console.print(f"[blue bold]Masukan detail data untuk produk {produk_terpilih.__name__}[/blue bold]")
 
             nama_produk = Prompt.ask("Masukkan [blue]nama[/blue] produk")
-            ukuran_batch = IntPrompt.ask("Masukan [blue bold]ukuran batch[/blue bold]", default=5)
-            biaya_produksi = IntPrompt.ask(f"Masukkan [blue bold]biaya produksi[/blue bold] untuk {ukuran_batch} pcs", default=0)
-            harga_jual = IntPrompt.ask(f"Masukkan [blue]harga jual[/blue] per {ukuran_batch} pcs", default=0)
+            ukuran_batch = IntPrompt.ask("Masukan [blue bold]ukuran batch[/blue bold]", default=5, show_default=False)
+            biaya_produksi = IntPrompt.ask(f"Masukkan [blue bold]biaya produksi[/blue bold] untuk {ukuran_batch} pcs", default=0, show_default=False)
+            harga_jual = IntPrompt.ask(f"Masukkan [blue]harga jual[/blue] per {ukuran_batch} pcs", default=0, show_default=False)
             kode_otomatis = self._generate_kode(produk_terpilih)
 
-            tabel_konfirmasi = Table(title="Konfirmasi Data Produk", box=box.ROUNDED)
+            tabel_konfirmasi = Table(title="Konfirmasi Data Produk", box=box.HEAVY_HEAD)
 
             tabel_konfirmasi.add_column("Attribut", justify="left", style="bold")
             tabel_konfirmasi.add_column("Nilai", justify="left")
@@ -137,7 +137,7 @@ class HanariBakeryApp:
 
             self._clean_screen()
             self.console.print(tabel_konfirmasi)
-            konfirmasi = Confirm.ask("Apakah data sudah [green]benar[/green]?", default=True)
+            konfirmasi = Confirm.ask("Apakah data sudah [green]benar[/green]?", default=True, show_default=False)
             if konfirmasi:
                 break
             else:
@@ -153,14 +153,18 @@ class HanariBakeryApp:
         self.daftar_produk.append(produk_baru)
         self.console.print(f"[green bold]Produk {nama_produk} berhasil ditambahkan![/green bold]")
 
+        self._jeda_untuk_lanjut()
+        self._clean_screen()
+
     def lihat_produk(self):
         self._clean_screen()
         if not self.daftar_produk:
             self.console.print("[red bold]Belum ada produk roti yang ditambahkan.[/red bold]")
             self._jeda_untuk_lanjut()
+            self._clean_screen()
             return
 
-        produk_table = Table(title="Daftar Produk Roti", box=box.ROUNDED)
+        produk_table = Table(title="Daftar Produk Roti", box=box.HEAVY_HEAD)
         produk_table.add_column("No", justify="left", style="bold")
 
         info_pertama = self.daftar_produk[0].get_info()
@@ -193,16 +197,18 @@ class HanariBakeryApp:
 
         self.console.print(produk_table)
         self._jeda_untuk_lanjut()
+        self._clean_screen()
 
     def estimasi_profit(self):
         self._clean_screen()
         if not self.daftar_produk:
             self.console.print("[red bold]Belum ada produk roti yang ditambahkan.[/red bold]")
             self._jeda_untuk_lanjut()
+            self._clean_screen()
             return
 
         # Menampilkan produk yang tersedia
-        produk_table = Table(title="Daftar Produk Roti untuk Estimasi Profit", box=box.ROUNDED)
+        produk_table = Table(title="Daftar Produk Roti untuk Estimasi Profit", box=box.HEAVY_HEAD)
         produk_table.add_column("No", justify="left", style="bold")
         produk_table.add_column("Nama Produk", justify="left", style="bold")
         produk_table.add_column("Kode Produk", justify="left", style="bold")
@@ -224,7 +230,7 @@ class HanariBakeryApp:
         produk_terpilih = self.daftar_produk[pilihan - 1]
 
         # Minta jumlah produksi
-        jumlah_produksi = IntPrompt.ask(f"Masukkan jumlah pcs untuk {produk_terpilih.nama_produk}: ",
+        jumlah_produksi = IntPrompt.ask(f"Masukkan [blue]jumlah[/blue] pcs untuk {produk_terpilih.nama_produk}",
                                         default=1)
 
         # Perhitungan estimasi profit
@@ -239,7 +245,7 @@ class HanariBakeryApp:
         total_estimasi_profit = profit_per_pcs * jumlah_produksi
 
         # Tabel estimasi profit
-        estimasi_table = Table(title=f"Estimasi Profit untuk {produk_terpilih.nama_produk}", box=box.ROUNDED)
+        estimasi_table = Table(title=f"Estimasi Profit untuk {produk_terpilih.nama_produk}", box=box.HEAVY_HEAD)
         estimasi_table.add_column("Deskripsi", style="bold")
         estimasi_table.add_column("Nilai", style="bold green")
 
@@ -247,12 +253,14 @@ class HanariBakeryApp:
         estimasi_table.add_row("Biaya Produksi per Batch", f"Rp {produk_terpilih.biaya_produksi:,}")
         estimasi_table.add_row("Harga Jual per Batch", f"Rp {produk_terpilih.harga_jual:,}")
         estimasi_table.add_row("Profit per Batch", f"Rp {profit_per_batch:,}")
-        estimasi_table.add_row("Profit per Pcs", f"Rp {profit_per_pcs:.0f}")
+        estimasi_table.add_row("Profit per Pcs", f"Rp {profit_per_pcs:,.0f}")
         estimasi_table.add_row("Total Estimasi Profit", f"Rp {total_estimasi_profit:,.0f}")
 
+        self._clean_screen()
         self.console.print(estimasi_table)
 
         self._jeda_untuk_lanjut()
+        self._clean_screen()
 
     def simulasi_produksi(self):
         self._clean_screen()
@@ -261,6 +269,7 @@ class HanariBakeryApp:
         if not self.daftar_produk:
             self.console.print("[bold red]Belum ada produk roti yang ditambahkan.[/bold red]")
             self._jeda_untuk_lanjut()
+            self._clean_screen()
             return
 
         pilihan_produk_table = Table(title="Pilih Produk untuk Disimulasikan")
@@ -283,28 +292,29 @@ class HanariBakeryApp:
         produk_terpilih = self.daftar_produk[pilihan_idx]
 
         # Langkah 2: Jalankan Simulasi dengan Urutan yang Benar
-        self.console.print(f"\n[bold]--- Memulai Simulasi untuk [yellow]{produk_terpilih.nama_produk}[/yellow] ---[/bold]")
+        self.console.print(f"\n[bold]--- Memulai Simulasi untuk [yellow]{produk_terpilih.nama_produk}[/yellow] ---[/bold]\n")
         time.sleep(1)
 
         # Memanggil metode proses wajib dari superclass ProdukRoti
-        self.console.print(produk_terpilih.pengadonan())
+        self.console.print("> ", produk_terpilih.pengadonan())
         time.sleep(1)
 
         # Memeriksa apakah produk ini punya kemampuan 'BisaDikembangkan'
         if isinstance(produk_terpilih, BisaDikembangkan):
-            self.console.print(produk_terpilih.pengembangan())
+            self.console.print("> ", produk_terpilih.pengembangan())
             time.sleep(1)
 
         # Memanggil metode proses wajib dari superclass ProdukRoti
-        self.console.print(produk_terpilih.pemanggangan())
+        self.console.print("> ", produk_terpilih.pemanggangan())
         time.sleep(1)
 
         # Memeriksa apakah produk ini punya kemampuan 'BisaDiberiToping'
         if isinstance(produk_terpilih, BisaDiberiToping):
-            self.console.print(produk_terpilih.toping())
+            self.console.print("> ", produk_terpilih.toping())
             time.sleep(1)
 
         self.console.print("\n[bold green]--- Simulasi Selesai ---[/bold green]")
 
         # Langkah 3: Jeda Layar
         self._jeda_untuk_lanjut()
+        self._clean_screen()
