@@ -48,7 +48,7 @@ Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar ke
 
 Berikut adalam diagaram flow yang menunjukan bagaimana alur program ini berjalan. Dirancang menggunkan [Draw.io](https://app.diagrams.net)
 
-<img src="media/Diagram_Flow.drawio.png" alt="Diagram Flow" height="750">
+<img src="media/Diagram_Flow.drawio.svg" alt="Diagram Flow" height="750">
 
 ---
 
