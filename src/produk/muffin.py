@@ -18,18 +18,17 @@ class Muffin(ProdukRoti, BisaDikembangkan, BisaDiberiToping):
     def pengadonan(self) -> str:
         return "campurkan bahan seperti telur gula susu cair minyak terigu vanili dan backing powder, aduk dengan mixer hingga tidak ada yang menggumpal"
     
-    def pengembangan(self):
+    def pengembangan(self) -> str:
         return "setelah di aduk diamkan sejenak, lalu masukkan kedalam loyang kecil"
     
-    def pemanggangan(self):
+    def pemanggangan(self) -> str:
         return "kemudian oven di suhu 180 derajat celcius selama 20 menit"
     
-    def toping(self):
+    def toping(self) -> str:
         return "beri hiasan toping bisa sebelum dimasukkan ke oven atau setelah proses oven"
     
     def get_info(self) -> dict:
-        """Mengembalikan informasi produk Muffin."""
         info = super().get_info()
-        info["Pengembangan"] = "Dapat di kembangkan"
+        info["Pengembangan"] = "Dapat dibentuk menggunakan cetakan berbentuk"
         info["Toping"] = "beri toping sesuai selera"
         return info
