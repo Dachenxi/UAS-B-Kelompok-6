@@ -131,7 +131,7 @@ class HanariBakeryApp:
             tabel_konfirmasi.add_row("Nama Produk", nama_produk)
             tabel_konfirmasi.add_row("Jenis Produk", produk_terpilih.__name__)
             tabel_konfirmasi.add_row("Kode Produk", kode_otomatis)
-            tabel_konfirmasi.add_row("Ukuran Batch", ukuran_batch)
+            tabel_konfirmasi.add_row("Ukuran Batch", f"{ukuran_batch}")
             tabel_konfirmasi.add_row("Biaya Produksi", f"Rp {biaya_produksi:,} per {ukuran_batch} pcs")
             tabel_konfirmasi.add_row("Harga Jual", f"Rp {harga_jual:,} per {ukuran_batch} pcs")
 
