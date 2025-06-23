@@ -18,19 +18,15 @@ class RotiManis(ProdukRoti, BisaDikembangkan):
         }
     
     def pengadonan(self):
-        """Metode untuk proses pengadonan pada Roti Manis"""
-        return "Proses Pengadonan pada bahan Roti Manis"
+        return "campur semua bahan kering kecuali garam aduk menggunakan spatula, lalu masukkan susu air dan telur aduk dan uleni sampai rata atau kalis. terakhir masukkan mentega dan garam aduk hingga rata"
     
     def pengembangan(self):
-        """Metode untuk proses pengembangan pada Roti Manis."""
-        return "Proses pengembangan pada Roti Manis."
+        return "setelah adonan kalis, diamkan selama 30 menit, jika sudah potong dan bulatkan dengan berat 40gr lalu diamkan kembali selama 15-20 menit. kemudian bentuk sesuai selera dan diamkan kembali selama 20-30 menit/sampai mengembang"
     
     def pemanggangan(self):
-        """Metode untuk proses pemanggangan pada Roti Manis"""
-        return "Proses pemanggangan pada Roti Manis"
+        return "kemudian oleskan margarin, dan oven di suhu 170 derajat celcius selama 15-20menit, setelah itu keluarkan dan olesi kembali dengan mentega lalu oven selama 20-25 menit"
     
     def get_info(self) -> dict:
-        """Mengembalikan informasi produk Roti Manis."""
         info = super().get_info()
-        info["Pengembangan"] = "Dapat di kembangkan"
+        info["Pengembangan"] = "Dapat dilakukan dengan mendiamkan terlebih dahulu ataupun dipotong dahulu"
         return info
