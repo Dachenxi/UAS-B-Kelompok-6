@@ -40,7 +40,7 @@ Aplikasi ini memiliki beberapa fitur utama yang dimana sesuai dengan kebutuhan t
 
 Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar kelas dalam sistem "Hanari Bakery". Diagram ini dirancang menggunakan [Draw.io](https://app.diagrams.net) sesuai dengan ketentuan proyek.
 
-![Class Diagram](media/Diagram_Class.drawio.png)
+![Class Diagram](media/Diagram_Class.drawio.svg)
 
 ---
 
@@ -48,7 +48,7 @@ Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar ke
 
 Berikut adalam diagaram flow yang menunjukan bagaimana alur program ini berjalan. Dirancang menggunkan [Draw.io](https://app.diagrams.net)
 
-<img src="media/Diagram_Flow.drawio.svg" alt="Diagram Flow" height="750">
+![Flow Diagram](media/Diagram_Flow.drawio.svg)
 
 ---
 
@@ -89,23 +89,25 @@ Untuk menjalankan aplikasi ini di komputer , ikuti langkah-langkah berikut:
 Berikut adalah hasil uji coba program beserta screenshot untuk setiap fitur utama, untuk dokumentasi program.
 
 #### 1. Tampilan Menu Utama
-Masih kosong
+![Menu Utama](media/screenshot/Menu_Utama.png)
 > Tampilan awal saat program dijalankan, menunjukkan semua opsi yang tersedia.
 
 #### 2. Menambah Produk Baru
-Masih kosong
+![Tambah Produk 1](media/screenshot/Tambah_Produk_1.png)
+![Tambah Produk 2](media/screenshot/Tambah_Produk_2.png)
+![Tambah Produk 3](media/screenshot/Tambah_Produk_3.png)
 > Contoh output saat pengguna memilih menu untuk menambahkan produk baru dan memasukkan data yang diperlukan.
 
 #### 3. Menampilkan Semua Produk
-Masih kosong
+![Menampilkan Semua Produk](media/screenshot/Tampilkan_Produk.png)
 > Output yang menampilkan semua produk yang sudah tersimpan dalam sistem.
 
 #### 4. Kalkulator Estimasi Profit
-Masih kosong
+![Estimasi Profit](media/screenshot/Estimasi_Profit.png)
 > Hasil perhitungan estimasi profit setelah pengguna memilih jenis roti dan jumlah produksi.
 
 #### 5. Simulasi Proses Produksi
-Masih kosong
+![Simulasi Proses Produksi](media/screenshot/Simulasi_Proses.png)
 > Contoh simulasi proses pembuatan untuk salah satu jenis roti.
 
 

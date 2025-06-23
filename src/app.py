@@ -162,21 +162,33 @@ class HanariBakeryApp:
 
         produk_table = Table(title="Daftar Produk Roti", box=box.ROUNDED)
         produk_table.add_column("No", justify="left", style="bold")
-        produk_table.add_column("Nama Produk", justify="left", style="bold")
-        produk_table.add_column("Kode Produk", justify="left", style="bold")
-        produk_table.add_column("Biaya Produksi", justify="left", style="bold")
-        produk_table.add_column("Harga Jual", justify="left", style="bold")
-        produk_table.add_column("Jenis Produk", justify="left", style="bold")
+
+        info_pertama = self.daftar_produk[0].get_info()
+        headers = list(info_pertama.keys())
+
+        for header in headers:
+            produk_table.add_column(header, justify="left", style="bold")
+
+        produk_table.add_column("Fitur Khusus", justify="left", style="yellow")
 
         for idx, produk in enumerate(self.daftar_produk, start=1):
             produk_info = produk.get_info()
+
+            # 3. Cek kemampuan produk menggunakan isinstance
+            fitur_list = []
+            if isinstance(produk, BisaDikembangkan):
+                fitur_list.append("Pengembangan")
+            if isinstance(produk, BisaDiberiToping):
+                fitur_list.append("Topping")
+
+            # Gabungkan daftar fitur menjadi satu string yang rapi
+            fitur_str = ", ".join(fitur_list) if fitur_list else "-"
+
+            # 4. Tambahkan baris ke tabel, termasuk kolom fitur baru
             produk_table.add_row(
                 str(idx),
-                produk_info["Nama Produk"],
-                produk_info["Kode Produksi"],
-                produk_info["Biaya Produksi"],
-                produk_info["Harga Jual"],
-                produk_info["Jenis"]
+                *produk_info.values(), # Gunakan '*' untuk memasukkan semua value dari dict
+                fitur_str
             )
 
         self.console.print(produk_table)
@@ -275,21 +287,21 @@ class HanariBakeryApp:
         time.sleep(1)
 
         # Memanggil metode proses wajib dari superclass ProdukRoti
-        produk_terpilih.pengadonan()
+        self.console.print(produk_terpilih.pengadonan())
         time.sleep(1)
 
         # Memeriksa apakah produk ini punya kemampuan 'BisaDikembangkan'
         if isinstance(produk_terpilih, BisaDikembangkan):
-            produk_terpilih.pengembangan()
+            self.console.print(produk_terpilih.pengembangan())
             time.sleep(1)
 
         # Memanggil metode proses wajib dari superclass ProdukRoti
-        produk_terpilih.pemanggangan()
+        self.console.print(produk_terpilih.pemanggangan())
         time.sleep(1)
 
         # Memeriksa apakah produk ini punya kemampuan 'BisaDiberiToping'
         if isinstance(produk_terpilih, BisaDiberiToping):
-            produk_terpilih.topping()
+            self.console.print(produk_terpilih.toping())
             time.sleep(1)
 
         self.console.print("\n[bold green]--- Simulasi Selesai ---[/bold green]")

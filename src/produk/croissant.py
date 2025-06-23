@@ -14,15 +14,15 @@ class Croissant(ProdukRoti, BisaDikembangkan):
             'Susu Cair': '100 ml',
         }
 
-    def pengembangan(self):
+    def pengembangan(self) -> str:
         return "Adonan croissant dikembangkan dengan teknik lipatan berlapis untuk menghasilkan tekstur yang renyah."
-    
+
     def pengadonan(self) -> str:
         return "Mencampurkan tepung terigu, gula, garam, dan ragi. Tambahkan susu cair, uleni hingga kalis, lalu istirahatkan selama 30 menit sebelum dilipat dengan mentega."
-    
+
     def pemanggangan(self) -> str:
         return "Croissant dipanggang dalam oven pada suhu 200°C selama 15-20 menit hingga berwarna keemasan dan mengembang sempurna."
-    
+
     def get_info(self) -> dict:
         info = super().get_info()
         info["Pengembangan"] = "Dapat dikembangkan dengan teknik lipatan berlapis untuk menghasilkan tekstur yang renyah."

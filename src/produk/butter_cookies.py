@@ -12,16 +12,16 @@ class ButterCookies(ProdukRoti, BisaDiberiToping):
             'Telur': '1 butir',
             'Vanili': '1 sdt',
         }
-        
-    def toping(self):
+
+    def toping(self) -> str:
         return "Menambahkan toping pada Butter Cookies."
-    
+
     def pengadonan(self) -> str:
         return "Mencampurkan mentega dan gula, masukkan telur dan vanili, aduk dengan tepung hingga kalis, lalu bentuk dan panggang hingga keemasan untuk membuat butter cookies yang lezat."
-    
+
     def pemanggangan(self) -> str:
         return "Panggang butter cookies dalam oven pada suhu 180°C selama 15-20 menit hingga berwarna keemasan dan teksturnya renyah."
-    
+
     def get_info(self) -> dict:
         info = super().get_info()
         info["Toping"] = "Coklat"
