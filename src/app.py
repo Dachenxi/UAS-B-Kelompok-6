@@ -213,7 +213,7 @@ class HanariBakeryApp:
 
         # Minta jumlah produksi
         jumlah_produksi = IntPrompt.ask(f"Masukkan jumlah pcs untuk {produk_terpilih.nama_produk}: ",
-                                        default=1, min_allowed=1)
+                                        default=1)
 
         # Perhitungan estimasi profit
         profit_per_batch = produk_terpilih.harga_jual - produk_terpilih.biaya_produksi
