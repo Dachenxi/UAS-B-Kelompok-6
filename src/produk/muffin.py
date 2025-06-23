@@ -15,25 +15,21 @@ class Muffin(ProdukRoti, BisaDikembangkan, BisaDiberiToping):
             'Backing powder': '15 gram',
         }
     
-    def pengadonan(self):
-        """Metode untuk proses pengadonan pada Muffin"""
-        return "Proses Pengadonan pada bahan Muffin"
+    def pengadonan(self) -> str:
+        return "campurkan bahan seperti telur gula susu cair minyak terigu vanili dan backing powder, aduk dengan mixer hingga tidak ada yang menggumpal"
     
     def pengembangan(self):
-        """Metode untuk proses pengembangan pada Muffin."""
-        return "Proses pengembangan pada Muffin."
+        return "setelah di aduk diamkan sejenak, lalu masukkan kedalam loyang kecil"
     
     def pemanggangan(self):
-        """Metode untuk proses pemanggangan pada Muffin"""
-        return "Proses pemanggangan pada Muffin"
+        return "kemudian oven di suhu 180 derajat celcius selama 20 menit"
     
     def toping(self):
-        """Metode untuk menambahkan toping pada Muffin."""
-        return "Menambahkan toping pada Muffin."
+        return "beri hiasan toping bisa sebelum dimasukkan ke oven atau setelah proses oven"
     
     def get_info(self) -> dict:
         """Mengembalikan informasi produk Muffin."""
         info = super().get_info()
         info["Pengembangan"] = "Dapat di kembangkan"
-        info["Toping"] = "Dapat diberi toping"
+        info["Toping"] = "beri toping sesuai selera"
         return info
