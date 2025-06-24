@@ -27,12 +27,12 @@ Sistem "Hanari Bakery" adalah aplikasi konsol berbasis Python yang dirancang unt
 
 ### Fitur Utama
 
-Aplikasi ini memiliki beberapa fitur utama yang dimana sesuai dengan kebutuhan tugas.
+Aplikasi ini memiliki beberapa fitur utama sesuai dengan kebutuhan tugas.
 
 * **Menambahkan Produk Baru:** Memungkinkan pengguna untuk menambahkan produk baru
 * **Menampilkan Semua Produk:** Menampilkan kepada pengguna setiap produk yang tersedia
 * **Kalkulator Estimasi Profit:** Membantu pengguna untuk mengkalkulasikan estimasi profit dari sebuah produk
-* **Simulasi Proses Produksi:** Menunjukan pengguna bagaimana sebuah produk itu diproduksi
+* **Simulasi Proses Produksi:** Menunjukkan pengguna bagaimana sebuah produk itu diproduksi
 
 ---
 
@@ -46,7 +46,7 @@ Berikut adalah diagram kelas yang menggambarkan arsitektur dan hubungan antar ke
 
 ### Diagram Flow
 
-Berikut adalam diagaram flow yang menunjukan bagaimana alur program ini berjalan. Dirancang menggunkan [Draw.io](https://app.diagrams.net)
+Berikut adalam diagaram flow yang menunjukkan bagaimana alur program ini berjalan. Dirancang menggunkan [Draw.io](https://app.diagrams.net)
 
 ![Flow Diagram](media/Diagram_Flow.drawio.svg)
 
@@ -54,7 +54,7 @@ Berikut adalam diagaram flow yang menunjukan bagaimana alur program ini berjalan
 
 ### Teknologi Yang Digunakan
 
-* **Bahasa Pemrogramam:** Python 3
+* **Bahasa Pemrograman:** Python 3
 * **Modul Tambahan:** Rich (digunakan untuk tampilan terminal / console yang lebih interaktif)
 
 ---
