@@ -18,7 +18,7 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UA
 |3.|Giga hidro Madani|K3524026|
 
 ### Lembar Kerja Peserta Didik
-[Link Lembar Kerja](media/LKPD_PBO_Proyek.pdf)
+[Link Lembar Kerja](https://docs.google.com/document/d/1CArRuycvJQH33WXBJrLY25u9K42s2DJ0xx96obj6X0I/edit?usp=sharing)
 
 ---
 
