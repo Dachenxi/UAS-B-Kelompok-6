@@ -113,6 +113,8 @@ class HanariBakeryApp:
                 time.sleep(1)
                 break
 
+        kode_otomatis = self._generate_kode(produk_terpilih)
+
         while True:
             self._clean_screen()
             self.console.print(f"[blue bold]Masukan detail data untuk produk {produk_terpilih.__name__}[/blue bold]")
@@ -121,7 +123,6 @@ class HanariBakeryApp:
             ukuran_batch = IntPrompt.ask("Masukan [blue bold]ukuran batch[/blue bold]", default=5, show_default=False)
             biaya_produksi = IntPrompt.ask(f"Masukkan [blue bold]biaya produksi[/blue bold] untuk {ukuran_batch} pcs", default=0, show_default=False)
             harga_jual = IntPrompt.ask(f"Masukkan [blue]harga jual[/blue] per {ukuran_batch} pcs", default=0, show_default=False)
-            kode_otomatis = self._generate_kode(produk_terpilih)
 
             tabel_konfirmasi = Table(title="Konfirmasi Data Produk", box=box.HEAVY_HEAD)
 
@@ -150,6 +151,7 @@ class HanariBakeryApp:
                                       biaya_produksi,
                                       harga_jual,
                                       ukuran_batch)
+        
         self.daftar_produk.append(produk_baru)
         self.console.print(f"[green bold]Produk {nama_produk} berhasil ditambahkan![/green bold]")
 
