@@ -17,6 +17,9 @@ Repositori ini berisi kode dan dokumentasi untuk proyek Ujian Akhir Semester (UA
 |2.|Ryan ivan pratama|K3524034|
 |3.|Giga hidro Madani|K3524026|
 
+### Lembar Kerja Peserta Didik
+[Link Lembar Kerja](media/LKPD_PBO_Proyek.pdf)
+
 ---
 
 ### Deskripsi Proyek
